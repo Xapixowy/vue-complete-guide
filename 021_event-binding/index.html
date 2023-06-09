@@ -17,6 +17,7 @@
          <h2>Events in Action</h2>
          <button v-on:click="increaseCounter(2)">Increase</button>
          <button v-on:click.middle="decreaseCounter(2)">Reduce</button>
+         <p v-once>Starting result: {{ counter }}</p>
          <p>Result: {{ counter }}</p>
          <input
             type="text"
