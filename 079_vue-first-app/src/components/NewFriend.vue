@@ -1,6 +1,6 @@
 <template>
    <form @submit.prevent="submitForm">
-      <h2>New friend</h2>
+      <h2>New Friend</h2>
       <div>
          <label for="name">Name: </label>
          <input id="name" name="name" type="text" v-model="name" />
@@ -27,7 +27,7 @@ export default {
       };
    },
    emits: {
-      formSubmitHandler: (friend) => {
+      'form-submit': (friend) => {
          if (friend) {
             return true;
          }
